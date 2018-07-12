@@ -1,0 +1,178 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "main_page";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+
+  overflow-x: hidden;
+  font-family: $open;
+  input, textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  outline: none !important;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+  }
+}
+
+button{
+  outline: none!important;
+  transition: all 0.3s ease;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+  }
+}
+
+
+
+.all_pages{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 101;
+  &.open{
+    ul{
+      right: 0;
+    }
+  }
+  .page_point{
+    width: 40px;
+    height: 15px;
+    background-color: #48bcff;
+    cursor: pointer;
+  }
+  ul{
+    background-color: #48bcff;
+    padding: 15px 20px;
+    position: absolute;
+    top: 100%;
+    width: 250px;
+    right: -250px;
+    transition: .4s;
+    max-height: 450px;
+    overflow-y: auto;
+    li{
+      list-style: none;
+      margin-bottom: 5px;
+      font-size: 17px;
+
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.content{
+  h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+  }
+  h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+  }
+  h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+  }
+  p{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  a{
+    color: #48bcff;;
+  }
+}
+
+
+.button{
+  width: auto;
+  height: 73px;
+  background-color: #3265f0;
+  min-width: 280px;
+  padding: 0 50px;
+  font-size: 24px;
+  font-weight: 600;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+
+  &:hover{
+    color: #fff;
+    background-color: #4e83fe;
+  }
+
+}
+
+@import "media"; // Always at the end
