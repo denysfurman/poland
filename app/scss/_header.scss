@@ -3,8 +3,8 @@
   height: 100vh;
   background-image: url("../img/backing.jpg");
   background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
+
+  background-position: center;
   padding-top: 20px;
 }
 
@@ -89,3 +89,156 @@ header{
   }
 
 }
+footer{
+  padding-top: 50px;
+  width: 100%;
+  background-color: #020b21;
+  padding-bottom: 20px;
+  .social{
+    display: flex;
+    margin-top: -20px;
+    li{
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        font-size: 55px;
+        color: #353c4d;
+        line-height: 0;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+
+  }
+
+}
+.footer_wr{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+
+  nav{
+    ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: -16px;
+
+      li{
+        &:last-child{
+          a{
+            margin-right: 0;
+          }
+
+        }
+      }
+      a{
+        margin-right: 30px;
+        text-transform: uppercase;
+        font-family: $mull;
+        font-weight: 200;
+        height: 100%;
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+
+
+      }
+    }
+  }
+}
+
+.footer_bottom{
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  border-top: 1px solid #353c4d;
+  span{
+    color: #353c4d;
+    font-size: 14px;
+  }
+  ul{
+    display: flex;
+    a{
+      font-size: 14px;
+      color: #353c4d;
+    }
+  }
+}
+
+
+.menu-button {
+  position: relative;
+  text-indent: -999em;
+  overflow: hidden;
+  margin: 0;
+  margin-top: -22px;
+  display: block;
+  margin-right: 10px;
+  height: 45px;
+  width: 35px;
+  transition: background 800ms;
+  background-color: lighten(aquamarine, 20%);
+  background: linear-gradient(transparent 0%, transparent 46%, #3265fe 46%, #3265fe 54%, transparent 54%, transparent 100%);
+  border-radius: .25em;
+  display: none;
+  &:after,
+  &:before {
+    transition: all ease 200ms;
+    position: absolute;
+    content: 'a';
+    background-color: #3265fe;
+    height: 4px;
+    width: 35px;
+  }
+  &:before {
+    top: .75em;
+    right: 0;
+  }
+  &:after {
+    bottom: .75em;
+    right: 0;
+  }
+  // Active
+  &.active {
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+    &:hover:after,
+    &:hover:before,
+    &:after,
+    &:before {
+      top: 50%;
+    }
+    &:before {
+      transform: rotate(45deg);
+      transform-origin: 50%;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      transform-origin: 50%;
+    }
+  }
+  // Hover Styles
+  &:hover {
+
+    &:before {
+      top: .6em;
+    }
+    &:after {
+      bottom: .6em;
+    }
+  }
+}
+
