@@ -19,6 +19,10 @@
     text-align: center;
     margin-bottom: 6px;
   }
+  .about_facts {
+    background-image: none;
+    background-color: #091650;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main_title {
@@ -60,6 +64,13 @@
   }
   header{
     position: relative;
+  }
+  .about_facts_item{
+    margin-bottom: 25px;
+  }
+  .page_title {
+    background-image: none;
+    background-color: #09133f;
   }
 
 
@@ -139,10 +150,10 @@
     background-color: #fff;
     padding: 20px 0 50px;
   }
-  .features_item{
+  .features_item {
     margin-bottom: 0;
   }
-  header nav ul{
+  header nav ul {
     position: absolute;
     left: 0;
     background-color: #3a6ff2;
@@ -152,7 +163,7 @@
     z-index: 20;
     top: 75px;
     display: none;
-    a{
+    a {
       margin-right: 0;
       width: 100%;
       margin-bottom: 10px;
@@ -163,23 +174,35 @@
 
     background-color: #183a87;
   }
-  header .logo{
+  header .logo {
     margin-left: -20px;
   }
 
-  .menu-button{
+  .menu-button {
     display: block;
   }
-  header nav ul a{
+  header nav ul a {
     font-weight: 400;
-    font-family: "Open Sans"!important;
+    font-family: "Open Sans" !important;
     color: #fff;
   }
   header nav ul a.sing {
     width: auto;
     height: 39px;
     padding: 0 40px;
-    font-family: "Open Sans"!important;
+    font-family: "Open Sans" !important;
     color: #fff;
+  }
+  .about_facts_item .about_facts_counter .counter_wr {
+    font-size: 23px;
+  }
+  .page_title_wr span {
+
+    text-align: center;
+  }
+  .page_title_wr h1 {
+
+    font-size: 28px;
+
   }
 }

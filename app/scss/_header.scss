@@ -242,3 +242,16 @@ footer{
   }
 }
 
+.icons_device{
+  display: flex;
+  li{
+    margin-right: 15px;
+    font-size: 30px;
+    opacity: 0.8;
+    &:last-child{
+      margin-right: 0;
+
+    }
+
+  }
+}
