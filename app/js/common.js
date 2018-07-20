@@ -11,6 +11,17 @@ $(function() {
         $('.all_pages').toggleClass('open');
     });
 
+    //progres
+    $('.install_instruction_item').each(function() {
+        var percent = parseInt($(this).find('.progress-pie-chart').data('percent')),
+            deg = 360 * percent / 100;
+        if (percent > 50) {
+            $(this).find('.progress-pie-chart').addClass('gt-50');
+        }
+        $(this).find('.ppc-progress-fill').css('transform', 'rotate(' + deg + 'deg)');
+        $(this).find('.ppc-percents span').html(percent + '%');
+    });
+
     //counter
     $('.counter').each(function() {
         var $this = $(this),

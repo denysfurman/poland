@@ -23,6 +23,21 @@
     background-image: none;
     background-color: #091650;
   }
+  .card {
+    padding: 30px 20px 30px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .display-2 {
+    font-size: 40px;
+  }
+  .display-2 .currency {
+    top: -8px;
+  }
+  .pricing_title .page_title_wr {
+    height: 158px;
+    margin-bottom: 48px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main_title {
@@ -72,7 +87,33 @@
     background-image: none;
     background-color: #09133f;
   }
+  .card.center {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    margin-top: 0;
+    position: relative;
+    z-index: 10;
+  }
+  .pricing_title {
 
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .install_instruction_item {
+    margin-bottom: 40px;
+  }
+  .install_instruction .video .progress-pie-chart {
+    margin-top: 10px;
+  }
+  .install_instruction_item span{
+    text-align: center;
+  }
+  .page_title_wr h1 {
+
+    text-align: center;
+  }
 
 
 }
