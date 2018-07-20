@@ -22,6 +22,18 @@ $(function() {
         $(this).find('.ppc-percents span').html(percent + '%');
     });
 
+
+    //form style
+    $('.form_style').styler({
+        selectSearch: true
+    });
+    //menu mob account
+    $('.menu-link').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('close');
+        $(".account_nav").slideToggle();
+    });
+
     //counter
     $('.counter').each(function() {
         var $this = $(this),

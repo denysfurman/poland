@@ -114,8 +114,22 @@
 
     text-align: center;
   }
-
-
+  .account_nav li {
+    margin-right: 0;
+    line-height: 30px;
+    a{
+      line-height: 40px;
+    }
+  }
+  .account_nav {
+    border-top: 1px solid #637394;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+  }
+  .menu-link{
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 767px) {

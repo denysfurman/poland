@@ -6,6 +6,19 @@
   background-color: #070f25;
   padding-top: 20px;
 }
+
+.user_page{
+  width: 100%;
+  background-color: #041031;
+  padding-bottom: 200px;
+  min-height: 743px;
+  header{
+    width: 100%;
+    padding: 30px 0 15px;
+    background-color: #000725;
+    margin-bottom: 30px;
+  }
+}
 .page_title_wr{
   display: flex;
   justify-content: center;
@@ -283,7 +296,7 @@ $primary-color: #3265f0;
 .install_instruction{
   .install_donwload{
 
-    margin: -25px auto 60px;
+    margin: -37px auto 60px;
     max-width: 300px;
     display: flex;
     justify-content: center;
@@ -368,7 +381,208 @@ $size: 130px;
 }
 
 
+// --------------------------------- account
+
+.account_nav{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #637394;
+  li{
+    margin-right: 40px;
+    a{
+      color: #ffffff;
+      font-family: $mull;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 50px;
+      text-transform: uppercase;
+      &.active,&:hover{
+        color: #637394;
+      }
+
+    }
+  }
+}
+form{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .button{
+    border: none;
+    height: 53px;
+    font-size: 18px;
+  }
+  .btn_test{
+    width: 242px;
+    height: 43px;
+    background-color: #1e2846;
+    min-width: 280px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: #fff!important;
+    opacity: 1;
+
+    &:hover{
+      color: #fff;
+      background-color: #4e83fe;
+    }
+  }
+}
+.form_item{
+  margin-bottom: 15px;
+  label{
+    display: block;
+    width: 100%;
+    color: #fff;
+  }
+  span{
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    display: block;
+  }
+
+  input,select{
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 100%;
+    padding: 0 15px;
+    line-height: 43px;
+    color: #fff;
+    border: none;
+  }
+  .jq-selectbox__select {
+    height: 43px;
+    padding: 0 45px 0 15px;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  .jq-selectbox__select-text {
+    display: block;
+    overflow: hidden;
+    width: 100%!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 43px;
+    line-height: 43px;
+    font-size: 16px;
+  }
+  .jq-selectbox__dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: #ffffff;
+    font-size: 16px;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+  .jq-selectbox li:hover {
+    background: rgba(1, 14, 56, 0.57);
+    color: #fff;
+  }
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 15px;
+    background-image: url(../img/down.svg);
+  }
+}
 
 
+// Transition
+@mixin transition ($properties...) {
+  transition: $properties .3s ease-out;
+  -webkit-transition: $properties .3s ease-out;
+  -moz-transition: $properties .3s ease-out;
+  -ms-transition: $properties .3s ease-out;
+  -o-transition: $properties .3s ease-out;
+}
+
+.menu-link {
+  color: #fff;
+  display: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  left: 0;
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+  &:hover{
+    color: #fff;
+  }
 
 
+  &:before {
+    content: "";
+    background: #fff;
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    display: block;
+    @include transition(all);
+  }
+
+  &:after {
+    content: "";
+    background: #fff;
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    display: block;
+    @include transition(all);
+  }
+
+  &.close {
+    &:before {
+      transform: rotate(45deg);
+      top: 0;
+      width: 25px;
+      margin: 0 0 0 -13px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 0;
+      width: 25px;
+      margin: 0 0 0 -13px;
+    }
+  }
+}
+
+.adress_item{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  &:last-child{
+    border-bottom: none;
+  }
+}
