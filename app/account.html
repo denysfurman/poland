@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<section class="pricing_title">
+<div class="user_page">
     
     
     <header class="main_header">
@@ -52,90 +52,70 @@
     
     </header>
     <div class="container">
-        <div class="page_title_wr">
-            <h1>Pricing</h1>
-            <span>Choose your pricing plan</span>
+        <a class="menu-link" href="#">Menu</a>
+        <ul class="account_nav">
+            <li><a href="#" class="active">Account</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Cryptocurrency address</a></li>
+            <li><a href="#">Payments</a></li>
+        </ul>
 
+        <div class="row">
+            <div class="col-lg-6">
 
-        </div>
-
-        <div class="row  justify-content-center">
-
-            <!-- Table #1  -->
-            <div class="col-xs-12 col-lg-4 col-md-6">
-                <div class="card text-xs-center  ">
-                    <div class="card-header">
-                        <span>START</span>
-
-                        <h3 class="display-2"><span class="currency">$</span>0<span class="period">/mon</span></h3>
+                <form action="#">
+                    <h3>Account</h3>
+                    <div class="form_item">
+                        <label>E-Mail</label>
+                        <input type="email">
                     </div>
-                    <div class="card-block">
-
-                        <ul class="list-group">
-                            <li class="list-group-item">One mining rig</li>
-                            <li class="list-group-item">Basic version of program</li>
-                            <li class="list-group-item">Community support</li>
-                        </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                    <div class="form_item">
+                        <label>User IP</label>
+                        <input type="text">
                     </div>
-                </div>
+                    <div class="form_item">
+                        <label>Currency Id</label>
+                        <select class="form_style">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="FRA">FRA</option>
+                        </select>
+                    </div>
+
+                    <button class="button">
+                        save
+                    </button>
+
+                </form>
             </div>
 
-            <!-- Table #1  -->
-            <div class="col-xs-12 col-lg-4 col-md-6">
-                <div class="card text-xs-center center">
-                    <div class="card-header">
-                        <span>PERSONAL</span>
-                        <h3 class="display-2"><span class="currency">$</span>3<span class="period">/mon</span></h3>
+            <div class="col-lg-5 offset-lg-1">
+
+                <form action="#">
+                    <h3>Change password</h3>
+                    <div class="form_item">
+                        <label>Current Password</label>
+                        <input type="password">
                     </div>
-                    <div class="card-block">
-
-                        <ul class="list-group">
-                            <li class="list-group-item">Unlimited number of rigs</li>
-                            <li class="list-group-item">Basic version of program</li>
-                            <li class="list-group-item">Email & Community support</li>
-
-
-
-
-                        </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                    <div class="form_item">
+                        <label>New password</label>
+                        <input type="password">
                     </div>
-                </div>
+                    <div class="form_item">
+                        <label>Confirm Password</label>
+                        <input type="password">
+                    </div>
+                    <button class="button">
+                        change password
+                    </button>
+                </form>
             </div>
-
-            <!-- Table #1  -->
-            <div class="col-xs-12 col-lg-4 col-md-6">
-                <div class="card text-xs-center">
-                    <div class="card-header">
-                        <span>BUSINESS</span>
-                        <h3 class="display-2">Custom</h3>
-                    </div>
-                    <div class="card-block">
-
-                        <ul class="list-group">
-                            <li class="list-group-item">Unlimited number of rigs</li>
-                            <li class="list-group-item">Advance program version</li>
-                            <li class="list-group-item">Full support</li>
-                        </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-
-</section>
-
-<section class="white_content content">
-    <div class="container">
-        <span class="title">How to get full version of program?</span>
+</div>
 
 
-        <p class="text_center">This version is dedicated for users that bought a mining rig from Belters Ltd. or Tecra Mining Ltd.</p>
-    </div>
-</section>
+
 
 
 
