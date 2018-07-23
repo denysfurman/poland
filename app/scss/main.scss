@@ -4,6 +4,7 @@
 @import "header";
 @import "main_page";
 @import "pages";
+@import "sing";
 
 ::placeholder {
   color: #666;
@@ -170,12 +171,37 @@ ul{
   margin-top: 20px;
   color: #fff!important;
   opacity: 1;
+  cursor: pointer;
+  &.red{
+    background-color: #d9534f;
+    &:hover{
+      background-color: #fd5f5d;
+    }
+  }
+  &.grey{
+    background-color: #4268a6;
+    &:hover{
+      background-color: #6398f7;
+    }
+  }
 
   &:hover{
     color: #fff;
     background-color: #4e83fe;
   }
-
 }
+
+.jq-checkbox.checked .jq-checkbox__div {
+  background-image: url(../img/checked.svg);
+}
+
+.jq-checkbox {
+
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  background: #fff;
+  cursor: pointer;
+}
+
 
 @import "media"; // Always at the end

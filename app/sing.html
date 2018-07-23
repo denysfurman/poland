@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<div class="user_page">
+<section class="page_sing">
     
     
     <header class="main_header">
@@ -52,55 +52,39 @@
     
     </header>
     <div class="container">
-        <a class="menu-link" href="#">Menu</a>
-        <ul class="account_nav">
-            <li><a href="#" >Account</a></li>
-            <li><a href="#" class="active">Notifications</a></li>
-            <li><a href="#">Cryptocurrency address</a></li>
-            <li><a href="#">Payments</a></li>
-        </ul>
+       <div class="col-xl-4 col-lg-5 col-md-6">
+           <form class="sing_form">
+               <h1>SING IN</h1>
+               <div class="sing_form_item">
+                   <label >Email</label>
+                   <input type="email" placeholder="Enter your email address">
+               </div>
+               <div class="sing_form_item">
+                   <label >Password</label>
+                   <input type="password" value="12213243">
+               </div>
+               <div class="sing_form_item">
+                   <label for="pass_save"><input type="checkbox" class="form_style" id="pass_save"> Remember me</label>
+                   <a href="#">Forgot password</a>
+               </div>
 
-        <div class="row">
-            <div class="col-lg-6">
-                <form action="#">
-                    <h3>SMS Notifications</h3>
-                    <div class="form_item">
-                        <label>Phone number</label>
-                        <input type="tel" value="+">
-                        <span>To text internationally, use the E.164 format (+ country code with numbers, no
-                                spaces). For example, a Brazilian phone number is +5511912345678 and a UK
-                                phone number is +447712345678.
-                        </span>
-                    </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
-                    <button class="button">
-                        save
-                    </button>
-                </form>
-            </div>
+               <button class="button">SING IN</button>
+               <p>Don't have an account? <a href="#">Register</a> </p>
 
-            <div class="col-lg-6">
-                <form action="#">
-                    <h3>Email Notifications</h3>
-                    <div class="form_item">
-                        <label>Email</label>
-                        <input type="email" >
-                        <span> Emails to send notifications, example: test@test.com,test2@test.com</span>
-                    </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
-                    <button class="button">
-                        save
-                    </button>
-                </form>
-            </div>
-        </div>
+
+
+
+
+
+
+
+
+
+           </form>
+       </div>
     </div>
-</div>
 
-
-
+</section>
 
 
 

@@ -52,46 +52,74 @@
     
     </header>
     <div class="container">
-        <a class="menu-link" href="#">Menu</a>
-        <ul class="account_nav">
-            <li><a href="#" >Account</a></li>
-            <li><a href="#" class="active">Notifications</a></li>
-            <li><a href="#">Cryptocurrency address</a></li>
-            <li><a href="#">Payments</a></li>
-        </ul>
 
         <div class="row">
             <div class="col-lg-6">
-                <form action="#">
-                    <h3>SMS Notifications</h3>
+
+                <form action="#" class="user_panel_form">
+                    <h3>Account</h3>
                     <div class="form_item">
-                        <label>Phone number</label>
-                        <input type="tel" value="+">
-                        <span>To text internationally, use the E.164 format (+ country code with numbers, no
-                                spaces). For example, a Brazilian phone number is +5511912345678 and a UK
-                                phone number is +447712345678.
-                        </span>
+                        <label>E-Mail</label>
+                        <input type="email">
                     </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
-                    <button class="button">
-                        save
-                    </button>
+                    <div class="form_item">
+                        <label>User IP</label>
+                        <input type="text">
+                    </div>
+                    <div class="form_item">
+                        <label>Currency Id</label>
+                        <select class="form_style">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="FRA">FRA</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="button">
+                                save
+                            </button>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button class="button grey">
+                                suspend
+                            </button>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="button red">
+                                delete
+                            </button>
+                        </div>
+                    </div>
+
+
+
                 </form>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-5 offset-lg-1">
+
                 <form action="#">
-                    <h3>Email Notifications</h3>
+                    <h3>Change password</h3>
                     <div class="form_item">
-                        <label>Email</label>
-                        <input type="email" >
-                        <span> Emails to send notifications, example: test@test.com,test2@test.com</span>
+                        <label>Current Password</label>
+                        <input type="password">
                     </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
+                    <div class="form_item">
+                        <label>New password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form_item">
+                        <label>Confirm Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form_item">
+                        <label for="pass_inf""><input type="checkbox" id="pass_inf" class="form_style">  Changing the password without confirmation</label>
+                    </div>
                     <button class="button">
-                        save
+                        change password
                     </button>
                 </form>
             </div>

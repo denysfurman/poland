@@ -61,40 +61,77 @@
         </ul>
 
         <div class="row">
-            <div class="col-lg-6">
-                <form action="#">
-                    <h3>SMS Notifications</h3>
-                    <div class="form_item">
-                        <label>Phone number</label>
-                        <input type="tel" value="+">
-                        <span>To text internationally, use the E.164 format (+ country code with numbers, no
-                                spaces). For example, a Brazilian phone number is +5511912345678 and a UK
-                                phone number is +447712345678.
-                        </span>
+            <div class="col-lg-12">
+
+                <div class="payments_title">
+                    <h3>Payments</h3>
+                    <span>Active license:  <i> 45 days left </i> </span>
+
+                </div>
+
+                <table class="rwd-table">
+                    <tr>
+                        <th>Date</th>
+                        <th>Credit Cars</th>
+                        <th>Amount</th>
+                        <th>Paid</th>
+                    </tr>
+                    <tr>
+                        <td data-th="Date">10/07/2018 15:45</td>
+                        <td data-th="Credit Cars">*4245</td>
+                        <td data-th="Amount">$10.00</td>
+                        <td data-th="Paid"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Date">10/07/2018 15:45</td>
+                        <td data-th="Credit Cars">*4245</td>
+                        <td data-th="Amount">$10.00</td>
+                        <td data-th="Paid"><i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Date">10/07/2018 15:45</td>
+                        <td data-th="Credit Cars">*4245</td>
+                        <td data-th="Amount">$10.00</td>
+                        <td data-th="Paid"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Date">10/07/2018 15:45</td>
+                        <td data-th="Credit Cars">*4245</td>
+                        <td data-th="Amount">$10.00</td>
+                        <td data-th="Paid"><i class="fas fa-exclamation-circle"></i></td>
+                    </tr>
+                </table>
+
+                <form  class="sel_period_form">
+                    <h3>Made Payments</h3>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5">
+                            <div class="form_item">
+
+                                <select class="form_style">
+                                    <option value="sel_period_1">Select a Period</option>
+                                    <option value="sel_period_1">Select a Period</option>
+                                    <option value="sel_period_1">Select a Period</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-3">
+                            <button class="button">
+                                pay
+                            </button>
+                        </div>
                     </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
-                    <button class="button">
-                        save
-                    </button>
                 </form>
+
             </div>
 
-            <div class="col-lg-6">
-                <form action="#">
-                    <h3>Email Notifications</h3>
-                    <div class="form_item">
-                        <label>Email</label>
-                        <input type="email" >
-                        <span> Emails to send notifications, example: test@test.com,test2@test.com</span>
-                    </div>
-                    <a href="#" class="btn_test">Test SMS Notification</a>
-                    <br>
-                    <button class="button">
-                        save
-                    </button>
-                </form>
-            </div>
+
         </div>
     </div>
 </div>
